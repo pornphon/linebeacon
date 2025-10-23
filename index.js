@@ -13,6 +13,13 @@ const config = {
 const client = new line.Client(config);
 const app = express();
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+    message: 'Webhook server is running!'
+  });
+});
+
 // 3. สร้าง Route สำหรับ Webhook
 // ต้องใช้ middleware ของ line-bot-sdk เพื่อตรวจสอบลายเซ็น (Signature)
 app.post('/webhook', line.middleware(config), (req, res) => {
