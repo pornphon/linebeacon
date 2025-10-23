@@ -1,0 +1,19 @@
+{
+  "name": "linebeacon",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@line/bot-sdk": "^10.3.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "line": "^0.1.8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
