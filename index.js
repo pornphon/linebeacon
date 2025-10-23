@@ -73,7 +73,7 @@ async function handleEvent(event) {
 }
 
 // 5. สั่งรัน Server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4713;
 app.listen(port, () => {
   console.log(`Webhook server กำลังรันที่ http://localhost:${port}`);
 });
